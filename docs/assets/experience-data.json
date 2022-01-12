@@ -1,0 +1,34 @@
+[
+    {
+      "companyName":"Intra Net Bilgi Teknolojileri",
+      "companyShortName":"intranet",
+      "jobTitle":"Software Developer",
+      "jobDate" : "03/2011 - 03/2013",
+      "jobDescription":"Company was making development for solution partners. I was mainly involved in BP’s (British Petroleum) projects.  Here are the projects that I am involved either in full development of project or partial development ",
+      "highlight" : false
+    },
+    {
+      "companyName":"Cardtek Group",
+      "companyShortName":"cardtek",
+      "jobTitle":"Software Developer",
+      "jobDate":"03/2013 - 11/2014",
+      "jobDescription":"Working with a team of developers for one of the biggest core infrastructure transformation projects in Turkish banking. Is Bank has more than 10 million customers with hundreds of thousand transactions every day.  Within this project my role was to perform conversion operations, by writing C# and PLSQL queries in a performance focused way. I used Oracle SQL_Loader to load data into Oracle environment then performed conversion operations by using DB objects (function/procedure/package/type...) This project was a big chance for me to work with Oracle Exadata environment.",
+      "highlight" : false
+    },
+    {
+      "companyName":"Anadolu Hayat Emeklilik",
+      "companyShortName":"ahe",
+      "jobTitle":"Software Developer",
+      "jobDate":"11/2014 - 07/2021 ",
+      "jobDescription":"Anadolu Hayat Emeklilik is the sector leader company in pension and insurance field in Turkey. I used different kinds of technologies such as C#, Biztalk, ADF, PLSQL and Java. There has been a successful infrastructure transformation project called “Fenix”. During this project all infrastructure codes and data moved from AS400 to Oracle/ADF environment. I played a key role during this project. Currently I am in an important team which is called “Fenix Core”. This team’s responsibility is to analyse problematic issues and make necessary core developments to solve them which is mostly based on PLSQL Development.",
+      "highlight" : false
+    },
+    {
+      "companyName":"Amadeus IT",
+      "companyShortName":"amadeus",
+      "jobTitle":"Software Developer",
+      "jobDate":"08/2021 - ...",
+      "jobDescription":"Member of Amadeus Loyalty CC1 team to serve Aegean Air Loyatlty Depertment using PL/SQL and Java.",
+      "highlight" : false
+    }
+  ]
