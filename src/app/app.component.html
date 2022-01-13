@@ -430,7 +430,7 @@
             <div>
               <div class="list-group">
                 <a class="list-group-item list-group-item-action flex-column align-items-start"
-                  *ngFor="let listExperience of (listExperiences?.reverse()! | searchExperience: selectedExp )"
+                  *ngFor="let listExperience of (listExperiences.reverse() | searchExperience: selectedExp )"
                   (click)="selectExperience(listExperience); selectedExp=''"
                   [style.backgroundColor]="listExperience.highlight ? '#f2c957' : '#FFF'">
                   <app-experience-items [expitem]="listExperience"></app-experience-items>
