@@ -310,7 +310,7 @@
   <span> </span>
   <div class="spacer"></div>
   <a aria-label="ozan_seckin_ twitter" target="_blank" rel="noopener" href="https://twitter.com/ozan_seckin_"
-    title="Twitter"  ngbTooltip="Contact me on Twitter" placement="left">
+    title="Twitter" ngbTooltip="Contact me on Twitter" placement="left">
     <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <rect width="400" height="400" fill="none" />
       <path
@@ -332,29 +332,31 @@
 
     <div>
       <img class="img-fluid rounded" src="assets/certificates/MS_Cert_Professional_logo_Blk_rgb.png" alt="awards"
-        height="100px" width="100px" style="margin-right: 8px; margin-left: 30px;" ngbTooltip="Microsoft Certified Professional" placement="bottom">
+        height="100px" width="100px" style="margin-right: 8px; margin-left: 30px;"
+        ngbTooltip="Microsoft Certified Professional" placement="bottom">
       <img class="img-fluid rounded" src="assets/certificates/Special_ProgC_Blk.png" alt="awards" height="100px"
-        width="100px" style="margin-right: 8px;" ngbTooltip="Microsoft Certified C# Specialist" placement="bottom"  >
+        width="100px" style="margin-right: 8px;" ngbTooltip="Microsoft Certified C# Specialist" placement="bottom">
       <img class="img-fluid rounded" src="assets/certificates/O-CertAssoc-O-DB-SQL-clr.bmp" alt="awards" height="100px"
-        width="100px" style="margin-right: 8px;"   ngbTooltip="Oracle Certified Associate" placement="bottom">
+        width="100px" style="margin-right: 8px;" ngbTooltip="Oracle Certified Associate" placement="bottom">
     </div>
 
   </div>
   <br> <br> <br>
-    <!-- Terminal -->
-    <input type="hidden" #selection>
-    <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>Welcome to Ozan Seçkin's Angular CV App</pre>
-      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-      <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-      <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-      <pre *ngSwitchCase="'test'">ng test</pre>
-      <pre *ngSwitchCase="'build'">ng build</pre>
-    </div>
+  <!-- Terminal -->
+  <input type="hidden" #selection>
+  <div class="terminal" [ngSwitch]="selection.value">
+    <pre *ngSwitchDefault>Welcome to Ozan Seçkin's Angular CV App</pre>
+    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+    <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
+    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
+    <pre *ngSwitchCase="'test'">ng test</pre>
+    <pre *ngSwitchCase="'build'">ng build</pre>
+  </div>
   <input type="hidden" #pageselection>
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener"
-      (click)="pageselection.value = 'education'; selectEducation(listEducations[0])">
+      (click)="pageselection.value = 'education'; selectEducation(listEducations[0])"
+      onmouseover="this.style.background='yellow';" onmouseout="this.style.background='none';">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
       </svg>
@@ -362,13 +364,15 @@
     </a>
 
     <a class="card" target="_blank" rel="noopener"
-      (click)="pageselection.value = 'experience'; selectExperience(listExperiences[listExperiences.length-1])">
+      (click)="pageselection.value = 'experience'; selectExperience(listExperiences[listExperiences.length-1])"
+      onmouseover="this.style.background='yellow';" onmouseout="this.style.background='none';">
       <img class="img-fluid rounded" src="assets/images/experience.png" alt="awards" height="24px" width="24px"
         style="margin-right: 8px;">
       <span>Experience</span>
     </a>
 
-    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'awards'">
+    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'awards'"
+    onmouseover="this.style.background='yellow';" onmouseout="this.style.background='none';">
       <img class="img-fluid rounded" src="assets/images/award.png" alt="awards" height="24px" width="24px"
         style="margin-right: 8px;">
       <span>Awards & Certificates</span>
@@ -382,13 +386,15 @@
       <span>Skills</span>
     </a>-->
 
-    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'courses'">
+    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'courses'"
+    onmouseover="this.style.background='yellow';" onmouseout="this.style.background='none';">
       <img class="img-fluid rounded" src="assets/images/course_seminar.png" alt="awards" height="24px" width="24px"
         style="margin-right: 8px;">
       <span>Courses & Seminars</span>
     </a>
 
-    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'contactinfo'">
+    <a class="card" target="_blank" rel="noopener" (click)="pageselection.value = 'contactinfo'"
+    onmouseover="this.style.background='yellow';" onmouseout="this.style.background='none';">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
         viewBox="0 0 24 24" width="24px" fill="#000000">
         <g>
@@ -478,13 +484,13 @@
   <!-- AWARD CERTIFICATE START [interval]="4000"-->
   <div class="card-container" *ngIf="pageselection.value =='awards'">
 
-    <ngb-carousel #carousel *ngIf="pdfSourceList"  
-    [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+    <ngb-carousel #carousel *ngIf="pdfSourceList" [interval]="5000" [pauseOnHover]="pauseOnHover"
+      [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
       <ng-template ngbSlide *ngFor="let pdfSource of pdfSourceList">
         <div style="text-align: center;">
           <a href="{{pdfSource.path}}" target="_blank" style="color:orange; text-decoration: underline;">Show PDF</a>
         </div>
-        <div >
+        <div>
           <app-awards-certificates [pdfSourcePath]="pdfSource.path">
           </app-awards-certificates>
         </div>
@@ -516,7 +522,7 @@
   </div>
   <!-- CONTACT INFO START -->
 
- 
+
 
 
 
